@@ -123,7 +123,7 @@ export function FollowCard() {
             <a
               target="_blank"
               href="https://github.com/santiagocarrilloT/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
-              download={"Perfil Desarrollador Santiago Carrillo.pdf"}
+              download="Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
             >
               <button className="follow-card-cv">
                 <TbFileCv className="follow-icon-email" />
@@ -275,8 +275,8 @@ export function FollowCard() {
           {/* Hoja de Vida */}
           <a
             target="_blank"
-            href="c:/Users/user/Downloads/Perfil_Desarrollador_Santiago_Carrillo.pdf"
-            download={"Perfil Desarrollador Santiago Carrillo.pdf"}
+            href="https://github.com/santiagocarrilloT/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+            download="Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
           >
             <button className="follow-card-cv">
               <TbFileCv className="follow-icon-email" />
