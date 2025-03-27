@@ -122,7 +122,7 @@ export function FollowCard() {
             {/* Hoja de Vida */}
             <a
               target="_blank"
-              href="/Portafolio/assets/Desarrollador_Santiago_Carrillo.pdf"
+              href="/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
               download="Desarrollador_Santiago_Carrillo.pdf"
             >
               <button className="follow-card-cv">
@@ -279,7 +279,7 @@ export function FollowCard() {
           {/* Hoja de Vida */}
           <a
             target="_blank"
-            href="/Portafolio/assets/Desarrollador_Santiago_Carrillo.pdf"
+            href="/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
             download="Desarrollador_Santiago_Carrillo.pdf"
           >
             <button hidden className="follow-card-cv">
