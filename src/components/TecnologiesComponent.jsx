@@ -22,9 +22,9 @@ export function ProjectTechComponent({ nameTech, Icon }) {
   );
 }
 
-export function ProjectLinkComponent() {
+export function ProjectLinkComponent({ projectRepository }) {
   return (
-    <a href="">
+    <a href={`${projectRepository}`} target="_blank">
       <button className="follow-card-projects-span-button">
         <div className="follow-card-projects-div">
           <FiGithub />

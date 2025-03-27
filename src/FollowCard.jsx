@@ -28,7 +28,7 @@ import { FormationComponent } from "./components/FormationComponent.jsx";
 import { useState } from "react";
 
 export function FollowCard() {
-  //Agregar los proyectos
+  //Agregar los proyectos en esta lista
   const listTechProject = [
     <ProyectsComponent
       imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
@@ -41,6 +41,7 @@ export function FollowCard() {
       description={
         "Aplicación multiplataforma para gestionar gastos personales, enfocada en ofrecer mayor control financiero mediante recordatorios y gráficos de ingresos y egresos."
       }
+      projectRepository={"https://github.com/santiagocarrilloT/Byls"}
     />,
     <ProyectsComponent
       imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
@@ -56,6 +57,7 @@ export function FollowCard() {
       description={
         "Sistema web para la gestión de tickets de una empresa de reparación de equipos. Su función es informar por medio de un ticket o informe, cual es el estado actual del dispositivo en reparación."
       }
+      projectRepository={"https://github.com/santiagocarrilloT/SystemTickets"}
     />,
     <ProyectsComponent
       imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
@@ -71,6 +73,9 @@ export function FollowCard() {
       description={
         "Aplicación multiplataforma para la toma de notas. Contiene base de datos conectada en la nube, lo cual permite ver las mismas notas en distintos dispositivos."
       }
+      projectRepository={
+        "https://github.com/santiagocarrilloT/MobileAppDevelop"
+      }
     />,
     <ProyectsComponent
       imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
@@ -82,6 +87,9 @@ export function FollowCard() {
       ]}
       description={
         "Aplicación de escritorio. Consulta y maneja funciones como presupuesto, comunidades beneficiadas, evaluación del porcentaje y trabajadores de la misma."
+      }
+      projectRepository={
+        "https://github.com/santiagocarrilloT/FundacionProNinez"
       }
     />,
   ];
@@ -122,7 +130,7 @@ export function FollowCard() {
             {/* Hoja de Vida */}
             <a
               target="_blank"
-              href="/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+              href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
               download="Desarrollador_Santiago_Carrillo.pdf"
             >
               <button className="follow-card-cv">
@@ -279,7 +287,7 @@ export function FollowCard() {
           {/* Hoja de Vida */}
           <a
             target="_blank"
-            href="/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+            href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
             download="Desarrollador_Santiago_Carrillo.pdf"
           >
             <button hidden className="follow-card-cv">

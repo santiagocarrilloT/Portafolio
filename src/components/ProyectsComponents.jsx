@@ -9,6 +9,7 @@ export function ProyectsComponent({
   tittleProyect,
   listTechProyect,
   description,
+  projectRepository,
 }) {
   return (
     <div className="follow-card-projects-area">
@@ -28,7 +29,7 @@ export function ProyectsComponent({
         </div>
         <p>{description}</p>
         {/* Enlace Repositorio */}
-        <ProjectLinkComponent />
+        <ProjectLinkComponent projectRepository={projectRepository} />
       </div>
     </div>
   );
