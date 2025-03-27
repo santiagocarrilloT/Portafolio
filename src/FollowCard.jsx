@@ -110,6 +110,7 @@ export function FollowCard() {
             <MdOutlinePlace className="follow-icon-email" /> Tuluá, Valle del
             Cauca
           </p>
+          {/* Contacto */}
           <div className="follow-card-contact">
             {/* Email */}
             <a target="_blank" href="mailto::santicarrillo314@gmail.com">
@@ -121,7 +122,7 @@ export function FollowCard() {
             {/* Hoja de Vida */}
             <a
               target="_blank"
-              href="c:/Users/user/Downloads/Perfil_Desarrollador_Santiago_Carrillo.pdf"
+              href="https://github.com/santiagocarrilloT/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
               download={"Perfil Desarrollador Santiago Carrillo.pdf"}
             >
               <button className="follow-card-cv">
