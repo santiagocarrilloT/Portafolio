@@ -122,8 +122,8 @@ export function FollowCard() {
             {/* Hoja de Vida */}
             <a
               target="_blank"
-              href="https://github.com/santiagocarrilloT/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
-              download="Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+              href="/Portafolio/assets/Desarrollador_Santiago_Carrillo.pdf"
+              download="Desarrollador_Santiago_Carrillo.pdf"
             >
               <button className="follow-card-cv">
                 <TbFileCv className="follow-icon-email" />
@@ -265,7 +265,11 @@ export function FollowCard() {
       <div className="follow-card-info-final">
         <p className="follow-card-info-final-p">Santiago Carrillo</p>
         {/* Email */}
-        <a target="_blank" href="mailto::santicarrillo314@gmail.com">
+        <a
+          className="follow-card-a-email"
+          target="_blank"
+          href="mailto::santicarrillo314@gmail.com"
+        >
           <button htmlFor="" className="follow-card-address">
             <MdOutlineMailOutline className="follow-icon-email" />
             santicarrillo314@gmail.com
@@ -275,10 +279,10 @@ export function FollowCard() {
           {/* Hoja de Vida */}
           <a
             target="_blank"
-            href="https://github.com/santiagocarrilloT/Portafolio/blob/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
-            download="Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+            href="/Portafolio/assets/Desarrollador_Santiago_Carrillo.pdf"
+            download="Desarrollador_Santiago_Carrillo.pdf"
           >
-            <button className="follow-card-cv">
+            <button hidden className="follow-card-cv">
               <TbFileCv className="follow-icon-email" />
             </button>
           </a>

@@ -334,6 +334,13 @@
   margin-top: 15px;
 }
 
+.follow-card-a-email {
+  display: flex;
+  box-sizing: border-box;
+  max-width: max-content;
+  width: auto;
+}
+
 .follow-card-aside {
   display: flex;
   justify-content: center;
