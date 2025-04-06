@@ -25,13 +25,18 @@ import { IoIosSchool } from "react-icons/io";
 
 import { ProyectsComponent } from "./components/ProyectsComponents.jsx";
 import { FormationComponent } from "./components/FormationComponent.jsx";
+
+import bylsBanner from "./assets/byls-Banner.png";
+import ticketsBanner from "./assets/systemTickets.png";
+import notasBanner from "./assets/notesWeb.png";
+import fundacionBanner from "./assets/fundacion.png";
 import { useState } from "react";
 
 export function FollowCard() {
   //Agregar los proyectos en esta lista
   const listTechProject = [
     <ProyectsComponent
-      imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
+      imageSrc={bylsBanner}
       tittleProyect={"Gestor Gastos Personales - Byls"}
       listTechProyect={[
         ["Supabase", SiSupabase],
@@ -44,7 +49,7 @@ export function FollowCard() {
       projectRepository={"https://github.com/santiagocarrilloT/Byls"}
     />,
     <ProyectsComponent
-      imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
+      imageSrc={ticketsBanner}
       tittleProyect={"Sistema de Gestión de Tickets - SystemTickets"}
       listTechProyect={[
         ["PHP", SiPhp],
@@ -60,7 +65,7 @@ export function FollowCard() {
       projectRepository={"https://github.com/santiagocarrilloT/SystemTickets"}
     />,
     <ProyectsComponent
-      imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
+      imageSrc={notasBanner}
       tittleProyect={"Notes Web"}
       listTechProyect={[
         ["Cordova", SiApachecordova],
@@ -78,7 +83,7 @@ export function FollowCard() {
       }
     />,
     <ProyectsComponent
-      imageSrc={"https://innovainternetmx.com/wp-content/uploads/app.jpeg"}
+      imageSrc={fundacionBanner}
       tittleProyect={"Fundación ProNiñez"}
       listTechProyect={[
         ["Java", RiJavaLine],

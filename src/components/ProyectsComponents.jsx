@@ -4,6 +4,8 @@ import {
   ProjectTechComponent,
 } from "./TecnologiesComponent";
 
+import ModalImg from "./Modal-Image";
+
 export function ProyectsComponent({
   imageSrc,
   tittleProyect,
@@ -11,13 +13,24 @@ export function ProyectsComponent({
   description,
   projectRepository,
 }) {
+  const [isOpen, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(!isOpen);
+  };
   return (
     <div className="follow-card-projects-area">
-      <img
-        src={imageSrc}
-        alt={tittleProyect}
-        className="follow-card-projects-img"
-      />
+      <button className="follow-card-projects-img-button" onClick={handleClick}>
+        {isOpen ? (
+          <ModalImg imageSrc={imageSrc} titleProyect={tittleProyect} />
+        ) : (
+          <img
+            src={imageSrc}
+            alt={tittleProyect}
+            className="follow-card-projects-img"
+          />
+        )}
+      </button>
+
       <div className="follow-card-projects-info">
         <span>
           <strong>{tittleProyect}</strong>

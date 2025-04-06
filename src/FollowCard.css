@@ -192,9 +192,23 @@
 }
 
 .follow-card-projects-img {
-  width: 37%;
+  width: 47%;
+  max-width: 400px;
+  min-width: 200px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.follow-card-projects-img-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .follow-card-projects-info {
@@ -241,8 +255,15 @@
   padding-bottom: 8px;
 }
 
+.follow-card-projects-a {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .follow-card-projects-span-button {
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
