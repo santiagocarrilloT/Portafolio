@@ -60,6 +60,14 @@
   text-align: left;
 }
 
+.follow-card-contact-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
 .follow-card-username {
   font-size: 50px;
   font-weight: bold;
@@ -377,4 +385,193 @@
   width: 100%;
   height: 4px;
   background: radial-gradient(#3c8565 20%, #000000 90%);
+}
+
+/* Large tablets and desktops */
+@media (max-width: 1200px) {
+  .follow-card-username {
+    font-size: 40px;
+  }
+
+  .follow-h2-ocupation {
+    font-size: 26px;
+  }
+
+  .follow-card-section,
+  .follow-card-section-tech,
+  .follow-card-section-projects,
+  .follow-card-section-formation {
+    padding: 20px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .follow-card-username {
+    font-size: 36px;
+  }
+
+  .follow-card-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .follow-card-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .follow-card-info {
+    align-items: center;
+  }
+
+  .follow-p-ubicacion {
+    justify-content: center;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  .follow-card-article {
+    padding: 10px;
+  }
+
+  .follow-card-avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .follow-card-username {
+    font-size: 28px;
+  }
+
+  .follow-h2-ocupation {
+    font-size: 22px;
+  }
+
+  .follow-card-section,
+  .follow-card-section-tech,
+  .follow-card-section-projects,
+  .follow-card-section-formation {
+    padding: 15px;
+  }
+
+  .follow-card-section h2,
+  .follow-card-section-tech h2,
+  .follow-card-section-projects h2,
+  .follow-card-section-formation h2 {
+    font-size: 24px;
+  }
+
+  .follow-card-tech-span,
+  .follow-card-projects-span,
+  .follow-card-formation-span {
+    font-size: 16px;
+  }
+
+  .follow-card-tech-div,
+  .follow-card-projects-div {
+    font-size: 24px;
+  }
+
+  .follow-card-formation-div {
+    font-size: 26px;
+  }
+
+  .follow-p-ubicacion,
+  .follow-card-section p,
+  .follow-card-tech-p,
+  .follow-card-projects-p {
+    font-size: 16px;
+  }
+
+  .follow-icon-email {
+    font-size: 24px;
+  }
+}
+
+/* Small tablets and large smartphones */
+@media (max-width: 768px) {
+  .follow-card-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .follow-card-contact-2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .follow-card-address,
+  .follow-card-github,
+  .follow-card-linkedin,
+  .follow-card-cv {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .follow-card-projects-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .follow-card-projects-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .follow-card-projects-info {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .follow-card-formation-area {
+    flex-direction: column;
+  }
+
+  .follow-card-formation-div {
+    font-size: 28px;
+  }
+
+  .follow-card-username {
+    font-size: 32px;
+  }
+
+  .follow-h2-ocupation {
+    font-size: 24px;
+  }
+
+  .follow-card-section h2,
+  .follow-card-section-tech h2,
+  .follow-card-section-projects h2,
+  .follow-card-section-formation h2 {
+    font-size: 26px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+  .follow-card-username {
+    font-size: 24px;
+  }
+
+  .follow-h2-ocupation {
+    font-size: 20px;
+  }
+
+  .follow-card-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .follow-card-section h2,
+  .follow-card-section-tech h2,
+  .follow-card-section-projects h2,
+  .follow-card-section-formation h2 {
+    font-size: 22px;
+  }
 }

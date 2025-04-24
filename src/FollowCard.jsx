@@ -132,31 +132,33 @@ export function FollowCard() {
                 santicarrillo314@gmail.com
               </button>
             </a>
-            {/* Hoja de Vida */}
-            <a
-              target="_blank"
-              href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
-              download="Desarrollador_Santiago_Carrillo.pdf"
-            >
-              <button className="follow-card-cv">
-                <TbFileCv className="follow-icon-email" />
-              </button>
-            </a>
-            {/* GitHub */}
-            <a target="_blank" href="https://github.com/santiagocarrilloT">
-              <button htmlFor="" className="follow-card-github">
-                <FiGithub className="follow-icon-email" />
-              </button>
-            </a>
-            {/* LinkedIn */}
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/santiago-carrillo-215452287/"
-            >
-              <button htmlFor="" className="follow-card-linkedin">
-                <FaLinkedinIn className="follow-icon-email" />
-              </button>
-            </a>
+            <div className="follow-card-contact-2">
+              {/* Hoja de Vida */}
+              <a
+                target="_blank"
+                href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+                download="Desarrollador_Santiago_Carrillo.pdf"
+              >
+                <button className="follow-card-cv">
+                  <TbFileCv className="follow-icon-email" />
+                </button>
+              </a>
+              {/* GitHub */}
+              <a target="_blank" href="https://github.com/santiagocarrilloT">
+                <button htmlFor="" className="follow-card-github">
+                  <FiGithub className="follow-icon-email" />
+                </button>
+              </a>
+              {/* LinkedIn */}
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/santiago-carrillo-215452287/"
+              >
+                <button htmlFor="" className="follow-card-linkedin">
+                  <FaLinkedinIn className="follow-icon-email" />
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -289,31 +291,33 @@ export function FollowCard() {
           </button>
         </a>
         <div className="follow-card-contact">
-          {/* Hoja de Vida */}
-          <a
-            target="_blank"
-            href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
-            download="Desarrollador_Santiago_Carrillo.pdf"
-          >
-            <button hidden className="follow-card-cv">
-              <TbFileCv className="follow-icon-email" />
-            </button>
-          </a>
-          {/* GitHub */}
-          <a target="_blank" href="https://github.com/santiagocarrilloT">
-            <button htmlFor="" className="follow-card-github">
-              <FiGithub className="follow-icon-email" />
-            </button>
-          </a>
-          {/* LinkedIn */}
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/santiago-carrillo-215452287/"
-          >
-            <button htmlFor="" className="follow-card-linkedin">
-              <FaLinkedinIn className="follow-icon-email" />
-            </button>
-          </a>
+          <div className="follow-card-contact-2">
+            {/* Hoja de Vida */}
+            <a
+              target="_blank"
+              href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+              download="Desarrollador_Santiago_Carrillo.pdf"
+            >
+              <button hidden className="follow-card-cv">
+                <TbFileCv className="follow-icon-email" />
+              </button>
+            </a>
+            {/* GitHub */}
+            <a target="_blank" href="https://github.com/santiagocarrilloT">
+              <button htmlFor="" className="follow-card-github">
+                <FiGithub className="follow-icon-email" />
+              </button>
+            </a>
+            {/* LinkedIn */}
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/santiago-carrillo-215452287/"
+            >
+              <button htmlFor="" className="follow-card-linkedin">
+                <FaLinkedinIn className="follow-icon-email" />
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </article>
