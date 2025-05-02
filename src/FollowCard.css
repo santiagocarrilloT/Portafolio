@@ -104,6 +104,13 @@
   align-items: center;
   flex-direction: column;
   padding: 30px;
+
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both;
 }
 
 .follow-card-section h2 {
@@ -120,11 +127,28 @@
   margin-top: 0px;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
 .follow-card-section-tech {
   display: flex;
   align-items: center;
   justify-content: left;
   padding: 30px;
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both;
 }
 
 .follow-card-section-tech h2 {
@@ -155,6 +179,13 @@
   flex-wrap: wrap;
   margin-top: 10px;
   gap: 10px;
+  animation: 720ms change-tech linear 2;
+}
+
+@keyframes change-tech {
+  to {
+    padding: 2px;
+  }
 }
 
 .follow-card-tech-div {
@@ -181,6 +212,12 @@
   justify-content: left;
   flex-direction: column;
   padding: 30px;
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both;
 }
 
 .follow-card-section-projects h2 {
@@ -288,12 +325,63 @@
   background-color: #00875a38;
 }
 
+.btn-projects {
+  position: relative;
+  padding: 15px 45px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.6s ease;
+}
+
 .follow-card-projects-button {
-  font-size: 18px;
+  border: 3px solid;
+  border-radius: 20px;
+  /* font-size: 18px;
   color: #eae5ff;
   border-style: solid;
   border-color: #9676ff;
-  background-color: #3d06ac81;
+  background-color: #3d06ac81; */
+}
+
+.follow-card-projects-button:hover {
+  background-color: #3d06ac56;
+  box-shadow: 0 0 20px #9676ff;
+  border-color: #9676ff;
+  color: #fff;
+  /* border-color: #eae5ff; */
+}
+
+.follow-card-projects-button span:nth-child(n) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+}
+
+.follow-card-projects-button span:nth-child(1) {
+  right: 10%;
+  top: -10%;
+  background-color: #fff;
+}
+
+.follow-card-projects-button span:nth-child(2) {
+  left: 10%;
+  bottom: -10px;
+}
+
+.follow-card-projects-button:hover span:nth-child(1) {
+  right: 80%;
+  transform: rotate(90deg);
+  color: #9676ff;
+  background-color: #9676ff;
+  /* animation: animate1 0.6s ease forwards; */
+}
+
+.follow-card-projects-button:hover span:nth-child(2) {
+  left: 80%;
+  transform: rotate(90deg);
+  color: #9676ff;
 }
 
 .follow-card-section-formation h2 {
@@ -349,6 +437,17 @@
   margin: 5px;
 }
 
+@keyframes showFinal {
+  from {
+    opacity: 0;
+    scale: 0%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
 .follow-card-info-final {
   display: flex;
   flex-direction: column;
@@ -356,6 +455,12 @@
   text-align: left;
   justify-content: left;
   gap: 10px;
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: showFinal;
+  animation-range: entry 25% cover 20%;
+  animation-fill-mode: both;
 }
 
 .follow-card-info-final-p {
@@ -383,8 +488,44 @@
 
 .follow-line {
   width: 100%;
-  height: 4px;
-  background: radial-gradient(#3c8565 20%, #000000 90%);
+  height: 6px;
+  /*background: radial-gradient(#3c8565 20%, #000000 90%);*/
+  background: radial-gradient(#036242 20%, #000000 90%);
+  animation: 740ms alternate change-color infinite;
+}
+
+@keyframes change-color {
+  /* 12% {
+    background: radial-gradient(#00875a, 20%, #000000 90%);
+  }
+
+  25% {
+    background: radial-gradient(#009b63 20%, #000000 90%);
+  } */
+
+  37% {
+    background: radial-gradient(#0abf7a 20%, #000000 90%);
+  }
+
+  50% {
+    background: radial-gradient(#2fd892 20%, #000000 90%);
+  }
+
+  62% {
+    background: radial-gradient(#6aebb2 20%, #000000 90%);
+  }
+
+  75% {
+    background: radial-gradient(#a4f6cc 20%, #000000 90%);
+  }
+
+  87% {
+    background: radial-gradient(#d0fbe3 20%, #000000 90%);
+  }
+
+  100% {
+    background: radial-gradient(#d0fbe3 20%, #000000 90%);
+  }
 }
 
 /* Large tablets and desktops */
@@ -402,6 +543,11 @@
   .follow-card-section-projects,
   .follow-card-section-formation {
     padding: 20px;
+    view-timeline: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-fill-mode: both;
   }
 }
 
@@ -555,6 +701,16 @@
 
 /* Very small devices */
 @media (max-width: 400px) {
+  .follow-card-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .follow-card-contact-2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   .follow-card-username {
     font-size: 24px;
   }

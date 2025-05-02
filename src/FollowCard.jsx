@@ -20,8 +20,7 @@ import { TbFileCv } from "react-icons/tb";
 import { FaFlutter } from "react-icons/fa6";
 import { TbCircleLetterBFilled } from "react-icons/tb";
 import { TecnologiesComponent } from "./components/TecnologiesComponent.jsx";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoIosSchool } from "react-icons/io";
+import { IoIosSchool, IoLogoCss3 } from "react-icons/io";
 
 import { ProyectsComponent } from "./components/ProyectsComponents.jsx";
 import { FormationComponent } from "./components/FormationComponent.jsx";
@@ -168,14 +167,15 @@ export function FollowCard() {
         <div>
           <h2>Sobre Mí</h2>
           <p>
-            Candidato a grado de Tecnología en Desarrollo de Software en la
-            Universidad del Valle, reconocido entre los 5 mejores estudiantes en
-            3 de 5 semestres. Me especializo en el desarrollo de aplicaciones
-            móviles y web, destacando en el trabajo en equipo. Mi meta es
-            continuar mis estudios para ser ingeniero en sistemas. Actualmente,
-            también me capacito de forma autodidacta para fortalecer mis
-            conocimientos en el desarrollo de software e iniciar en el mundo de
-            los negocios.
+            Tecnólogo en Desarrollo de Software, reconocido como el mejor
+            graduando. Poseo experiencia en backend y habilidades en frontend.
+            Me especializo en la creación de soluciones limpias, escalables y
+            eficientes, aplicando principios de POO, programación funcional y
+            orientada a eventos. Mi manejo técnico incluye PHP, JavaScript,
+            Java, HTML, React, y bases de datos tanto relacionales como NoSQL.
+            Me adapto rápidamente a nuevas tecnologías y disfruto trabajar en
+            equipo, buscando siempre aportar ideas y generar valor en los
+            proyectos.
           </p>
         </div>
       </section>
@@ -196,6 +196,8 @@ export function FollowCard() {
             />
             {/* HTML */}
             <TecnologiesComponent nameTech="HTML" Icon={FaHtml5} />
+            {/* CSS */}
+            <TecnologiesComponent nameTech="CSS" Icon={IoLogoCss3} />
             {/* PHP */}
             <TecnologiesComponent nameTech="PHP" Icon={SiPhp} />
             {/* Scala */}
@@ -222,14 +224,16 @@ export function FollowCard() {
               return element;
             })}
           </div>
-          <button
+          <a
             onClick={() => {
               setShowAll(!showAll);
             }}
-            className="follow-card-projects-button"
+            className="btn-projects follow-card-projects-button"
           >
             {showAll ? "Ver menos" : "Ver más"}
-          </button>
+            <span></span>
+            <span></span>
+          </a>
         </div>
       </section>
 
