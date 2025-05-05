@@ -109,7 +109,7 @@
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 25% cover 35%;
+  animation-range: entry 25% cover 25%;
   animation-fill-mode: both;
 }
 
@@ -147,7 +147,7 @@
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 25% cover 35%;
+  animation-range: entry 25% cover 25%;
   animation-fill-mode: both;
 }
 
@@ -216,7 +216,7 @@
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 25% cover 35%;
+  animation-range: entry 25% cover 25%;
   animation-fill-mode: both;
 }
 
@@ -234,6 +234,16 @@
   align-items: center;
   margin-bottom: 40px;
   gap: 10px;
+  border: #045038 solid 2px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #012d2169;
+}
+
+.follow-card-projects-area:hover {
+  background-color: #012d21d2;
+  box-shadow: 0 0 10px #585c0b;
+  border-color: #045038;
 }
 
 .follow-card-projects-img {
@@ -242,6 +252,11 @@
   min-width: 200px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.follow-card-projects-img:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 .follow-card-projects-img-button {
@@ -254,6 +269,10 @@
   border-radius: 10px;
   margin: 0;
   padding: 0;
+}
+
+.follow-card-projects-img-button:hover {
+  border-color: transparent;
 }
 
 .follow-card-projects-info {
@@ -337,11 +356,6 @@
 .follow-card-projects-button {
   border: 3px solid;
   border-radius: 20px;
-  /* font-size: 18px;
-  color: #eae5ff;
-  border-style: solid;
-  border-color: #9676ff;
-  background-color: #3d06ac81; */
 }
 
 .follow-card-projects-button:hover {
@@ -349,6 +363,7 @@
   box-shadow: 0 0 20px #9676ff;
   border-color: #9676ff;
   color: #fff;
+  cursor: pointer;
   /* border-color: #eae5ff; */
 }
 
@@ -495,14 +510,6 @@
 }
 
 @keyframes change-color {
-  /* 12% {
-    background: radial-gradient(#00875a, 20%, #000000 90%);
-  }
-
-  25% {
-    background: radial-gradient(#009b63 20%, #000000 90%);
-  } */
-
   37% {
     background: radial-gradient(#0abf7a 20%, #000000 90%);
   }
@@ -543,9 +550,9 @@
   .follow-card-section-projects,
   .follow-card-section-formation {
     padding: 20px;
-    view-timeline: --image;
+    /* view-timeline: --image;
     view-timeline-axis: block;
-    animation-timeline: --image;
+    animation-timeline: --image; */
     animation-name: show;
     animation-fill-mode: both;
   }

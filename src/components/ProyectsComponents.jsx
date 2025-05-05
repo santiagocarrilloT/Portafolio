@@ -17,16 +17,22 @@ export function ProyectsComponent({
   const handleClick = () => {
     setOpen(!isOpen);
   };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="follow-card-projects-area">
       <button className="follow-card-projects-img-button" onClick={handleClick}>
-        {isOpen ? (
-          <ModalImg imageSrc={imageSrc} titleProyect={tittleProyect} />
-        ) : (
-          <img
-            src={imageSrc}
-            alt={tittleProyect}
-            className="follow-card-projects-img"
+        <img
+          src={imageSrc}
+          alt={tittleProyect}
+          className="follow-card-projects-img"
+        />
+        {isOpen && (
+          <ModalImg
+            onClose={handleClose}
+            imageSrc={imageSrc}
+            titleProyect={tittleProyect}
           />
         )}
       </button>

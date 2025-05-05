@@ -1,12 +1,13 @@
+import { useState } from "react";
 import "./modal-img.css";
 
-const ModalImg = ({ imageSrc, titleProyect }) => {
+const ModalImg = ({ imageSrc, titleProyect, onClose }) => {
   return (
-    <article className="modal isOpen">
+    <div className="modal" onClick={onClose}>
       <div className="modal-content">
         <img className="modal-img" src={imageSrc} alt={titleProyect} />
       </div>
-    </article>
+    </div>
   );
 };
 

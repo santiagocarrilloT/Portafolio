@@ -18,9 +18,10 @@ import { FiGithub } from "react-icons/fi";
 import { BiLogoFirebase, BiLogoPostgresql, BiLogoFigma } from "react-icons/bi";
 import { TbFileCv } from "react-icons/tb";
 import { FaFlutter } from "react-icons/fa6";
-import { TbCircleLetterBFilled } from "react-icons/tb";
+import { TbCircleLetterBFilled, TbBrandMysql } from "react-icons/tb";
 import { TecnologiesComponent } from "./components/TecnologiesComponent.jsx";
 import { IoIosSchool, IoLogoCss3 } from "react-icons/io";
+import { LuCloudCog } from "react-icons/lu";
 
 import { ProyectsComponent } from "./components/ProyectsComponents.jsx";
 import { FormationComponent } from "./components/FormationComponent.jsx";
@@ -171,11 +172,8 @@ export function FollowCard() {
             graduando. Poseo experiencia en backend y habilidades en frontend.
             Me especializo en la creación de soluciones limpias, escalables y
             eficientes, aplicando principios de POO, programación funcional y
-            orientada a eventos. Mi manejo técnico incluye PHP, JavaScript,
-            Java, HTML, React, y bases de datos tanto relacionales como NoSQL.
-            Me adapto rápidamente a nuevas tecnologías y disfruto trabajar en
-            equipo, buscando siempre aportar ideas y generar valor en los
-            proyectos.
+            orientada a eventos. Disfruto trabajar en equipo, buscando siempre
+            aportar ideas y generar valor en los proyectos.
           </p>
         </div>
       </section>
@@ -211,6 +209,10 @@ export function FollowCard() {
               nameTech="PostgreSQL"
               Icon={BiLogoPostgresql}
             />
+            {/* MySQL */}
+            <TecnologiesComponent nameTech="MySQL" Icon={TbBrandMysql} />
+            {/* API REST */}
+            <TecnologiesComponent nameTech="RESTful" Icon={LuCloudCog} />
           </div>
         </div>
       </section>
