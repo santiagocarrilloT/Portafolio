@@ -109,11 +109,7 @@ export function FollowCard() {
       {/* Imagen, nombre y ocupación */}
       <header className="follow-card-header">
         {/* Foto de Perfil */}
-        <img
-          className="follow-card-avatar"
-          src="https://img.freepik.com/foto-gratis/joven-barbudo-camisa-rayas_273609-5677.jpg"
-          alt="Foto de perfil"
-        ></img>
+        <img className="follow-card-avatar" src="" alt="Foto de perfil"></img>
 
         {/* Info Contact */}
         <div className="follow-card-info">
@@ -136,7 +132,7 @@ export function FollowCard() {
               {/* Hoja de Vida */}
               <a
                 target="_blank"
-                href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+                href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/CV-SantiagoCarrillo.pdf"
                 download="Desarrollador_Santiago_Carrillo.pdf"
               >
                 <button className="follow-card-cv">
