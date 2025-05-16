@@ -26,16 +26,18 @@ import { LuCloudCog } from "react-icons/lu";
 import { ProyectsComponent } from "./components/ProyectsComponents.jsx";
 import { FormationComponent } from "./components/FormationComponent.jsx";
 
-import bylsBanner from "./assets/byls-Banner.png";
-import ticketsBanner from "./assets/systemTickets.png";
-import notasBanner from "./assets/notesWeb.png";
+import bylsBanner from "./assets/byls-Banner.webp";
+import ticketsBanner from "./assets/systemTickets.webp";
+import notasBanner from "./assets/notesWeb.webp";
 import fundacionBanner from "./assets/fundacion.png";
+import fotoPerfil from "./assets/foto.jpg";
 import { useState } from "react";
 
 export function FollowCard() {
   //Agregar los proyectos en esta lista
   const listTechProject = [
     <ProyectsComponent
+      key={0}
       imageSrc={bylsBanner}
       tittleProyect={"Gestor Gastos Personales - Byls"}
       listTechProyect={[
@@ -49,6 +51,7 @@ export function FollowCard() {
       projectRepository={"https://github.com/santiagocarrilloT/Byls"}
     />,
     <ProyectsComponent
+      key={1}
       imageSrc={ticketsBanner}
       tittleProyect={"Sistema de Gestión de Tickets - SystemTickets"}
       listTechProyect={[
@@ -65,6 +68,7 @@ export function FollowCard() {
       projectRepository={"https://github.com/santiagocarrilloT/SystemTickets"}
     />,
     <ProyectsComponent
+      key={2}
       imageSrc={notasBanner}
       tittleProyect={"Notes Web"}
       listTechProyect={[
@@ -83,6 +87,7 @@ export function FollowCard() {
       }
     />,
     <ProyectsComponent
+      key={3}
       imageSrc={fundacionBanner}
       tittleProyect={"Fundación ProNiñez"}
       listTechProyect={[
@@ -109,7 +114,12 @@ export function FollowCard() {
       {/* Imagen, nombre y ocupación */}
       <header className="follow-card-header">
         {/* Foto de Perfil */}
-        <img className="follow-card-avatar" src="" alt="Foto de perfil"></img>
+        <img
+          loading="lazy"
+          className="follow-card-avatar"
+          src={fotoPerfil}
+          alt="Foto de perfil"
+        ></img>
 
         {/* Info Contact */}
         <div className="follow-card-info">
@@ -132,7 +142,7 @@ export function FollowCard() {
               {/* Hoja de Vida */}
               <a
                 target="_blank"
-                href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/CV-SantiagoCarrillo.pdf"
+                href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/CV-Santiagocarrillo.pdf"
                 download="Desarrollador_Santiago_Carrillo.pdf"
               >
                 <button className="follow-card-cv">
@@ -297,7 +307,7 @@ export function FollowCard() {
             {/* Hoja de Vida */}
             <a
               target="_blank"
-              href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/Perfil%20Desarrollador%20Santiago%20Carrillo.pdf"
+              href="https://raw.githubusercontent.com/santiagocarrilloT/Portafolio/refs/heads/main/CV-Santiagocarrillo.pdf"
               download="Desarrollador_Santiago_Carrillo.pdf"
             >
               <button hidden className="follow-card-cv">

@@ -27,6 +27,7 @@ export function ProyectsComponent({
           src={imageSrc}
           alt={tittleProyect}
           className="follow-card-projects-img"
+          loading="lazy"
         />
         {isOpen && (
           <ModalImg

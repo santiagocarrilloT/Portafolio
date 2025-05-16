@@ -1,4 +1,3 @@
-import { IoLink } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
 export function TecnologiesComponent({ nameTech, Icon }) {
   return (
