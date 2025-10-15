@@ -537,6 +537,10 @@
 
 /* Large tablets and desktops */
 @media (max-width: 1200px) {
+  .follow-card-avatar{
+    margin-right: 0;
+  }
+
   .follow-card-username {
     font-size: 40px;
   }
@@ -560,6 +564,9 @@
 
 /* Medium devices (tablets) */
 @media (max-width: 992px) {
+  .follow-card-avatar{
+    margin-right: 0;
+  }
   .follow-card-username {
     font-size: 36px;
   }
@@ -586,6 +593,9 @@
 
 /* Extra small devices (phones) */
 @media (max-width: 576px) {
+  .follow-card-avatar{
+    margin-right: 0;
+  }
   .follow-card-article {
     padding: 10px;
   }
@@ -708,6 +718,9 @@
 
 /* Very small devices */
 @media (max-width: 400px) {
+  .follow-card-avatar{
+    margin-right: 0;
+  }
   .follow-card-contact {
     flex-direction: column;
     align-items: flex-start;

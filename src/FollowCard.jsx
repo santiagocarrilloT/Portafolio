@@ -30,7 +30,7 @@ import bylsBanner from "./assets/byls-Banner.webp";
 import ticketsBanner from "./assets/systemTickets.webp";
 import notasBanner from "./assets/notesWeb.webp";
 import fundacionBanner from "./assets/fundacion.png";
-import fotoPerfil from "./assets/foto.jpg";
+import fotoPerfil from "./assets/fotoPortafolio.png";
 import { useState } from "react";
 
 export function FollowCard() {
@@ -158,7 +158,7 @@ export function FollowCard() {
               {/* LinkedIn */}
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/santiago-carrillo-215452287/"
+                href="https://www.linkedin.com/in/santiago-carrillo-torres-693b40376"
               >
                 <button htmlFor="" className="follow-card-linkedin">
                   <FaLinkedinIn className="follow-icon-email" />
@@ -175,11 +175,11 @@ export function FollowCard() {
           <h2>Sobre Mí</h2>
           <p>
             Tecnólogo en Desarrollo de Software, reconocido como el mejor
-            graduando. Poseo experiencia en backend y habilidades en frontend.
-            Me especializo en la creación de soluciones limpias, escalables y
-            eficientes, aplicando principios de POO, programación funcional y
-            orientada a eventos. Disfruto trabajar en equipo, buscando siempre
-            aportar ideas y generar valor en los proyectos.
+            graduando. Poseo experiencia en backend y habilidades en frontend. 
+            Me especializo en el desarrollo de soluciones limpias, escalables 
+            y eficientes, aplicando principios de programación orientada a objetos,
+            funcional y basada en eventos. Disfruto colaborar en equipo, aportando 
+            ideas y generando valor en cada proyecto
           </p>
         </div>
       </section>
@@ -323,7 +323,7 @@ export function FollowCard() {
             {/* LinkedIn */}
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/santiago-carrillo-215452287/"
+              href="https://www.linkedin.com/in/santiago-carrillo-torres-693b40376"
             >
               <button htmlFor="" className="follow-card-linkedin">
                 <FaLinkedinIn className="follow-icon-email" />
