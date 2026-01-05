@@ -1,3 +1,8 @@
+/* 
+Para lanzar cambios en el enlace del proyecto ejecutar el comando:
+npm run deploy 
+*/
+
 import "./FollowCard.css";
 
 import { MdOutlinePlace, MdOutlineMailOutline } from "react-icons/md";
@@ -174,12 +179,10 @@ export function FollowCard() {
         <div>
           <h2>Sobre Mí</h2>
           <p>
-            Tecnólogo en Desarrollo de Software, reconocido como el mejor
-            graduando. Poseo experiencia en backend y habilidades en frontend. 
-            Me especializo en el desarrollo de soluciones limpias, escalables 
-            y eficientes, aplicando principios de programación orientada a objetos,
-            funcional y basada en eventos. Disfruto colaborar en equipo, aportando 
-            ideas y generando valor en cada proyecto
+            Tecnólogo en Desarrollo de Software e ingeniero en formación con trayectoria probada en el despliegue de soluciones
+            escalables. He materializado arquitecturas, incluyendo un E-commerce de alto impacto (React/MongoDB) con
+            gestión automatizada de inventarios y un Gestor Financiero móvil (Flutter) bajo el patrón MVC. Administro
+            infraestructuras en la nube y bases de datos (SQL/NoSQL) bajo estándares ágiles de Scrum y Jira.
           </p>
         </div>
       </section>
