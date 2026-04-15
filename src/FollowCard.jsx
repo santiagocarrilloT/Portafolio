@@ -17,6 +17,9 @@ import {
   SiApachecordova,
   SiOracle,
   SiApache,
+  SiReact,
+  SiRedux,
+  SiMongodb,
 } from "react-icons/si";
 import { DiScala } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
@@ -44,6 +47,20 @@ export function FollowCard() {
     <ProyectsComponent
       key={0}
       imageSrc={bylsBanner}
+      tittleProyect={"E-commerce - VillageShop"}
+      listTechProyect={[
+        ["React", SiReact],
+        ["Redux", SiRedux],
+        ["MongoDB", SiMongodb],
+      ]}
+      description={
+        "E-commerce que brinda información de precios, ofertas vigentes y reseñas de usuarios. Integra pasarela de pago con PayPal. Incluye panel administrativo para gestionar inventario, actualizar precios y administrar promociones."
+      }
+      projectRepository={"https://github.com/santiagocarrilloT/Ecommerce"}
+    />,
+    <ProyectsComponent
+      key={1}
+      imageSrc={bylsBanner}
       tittleProyect={"Gestor Gastos Personales - Byls"}
       listTechProyect={[
         ["Supabase", SiSupabase],
@@ -56,7 +73,7 @@ export function FollowCard() {
       projectRepository={"https://github.com/santiagocarrilloT/Byls"}
     />,
     <ProyectsComponent
-      key={1}
+      key={2}
       imageSrc={ticketsBanner}
       tittleProyect={"Sistema de Gestión de Tickets - SystemTickets"}
       listTechProyect={[
@@ -73,7 +90,7 @@ export function FollowCard() {
       projectRepository={"https://github.com/santiagocarrilloT/SystemTickets"}
     />,
     <ProyectsComponent
-      key={2}
+      key={3}
       imageSrc={notasBanner}
       tittleProyect={"Notes Web"}
       listTechProyect={[
@@ -92,7 +109,7 @@ export function FollowCard() {
       }
     />,
     <ProyectsComponent
-      key={3}
+      key={4}
       imageSrc={fundacionBanner}
       tittleProyect={"Fundación ProNiñez"}
       listTechProyect={[
