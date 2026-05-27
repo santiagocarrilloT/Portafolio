@@ -180,7 +180,7 @@ export function FollowCard() {
               {/* LinkedIn */}
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/santiago-carrillo-torres-693b40376"
+                href="https://www.linkedin.com/in/santiago-carrillo-torres-693b40376/"
               >
                 <button htmlFor="" className="follow-card-linkedin">
                   <FaLinkedinIn className="follow-icon-email" />
